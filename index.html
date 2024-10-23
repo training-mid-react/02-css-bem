@@ -1,113 +1,239 @@
+<!-- Empresa de Desarrollo de Software -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Transformamos ideas de negocio en realidad">
+    <meta name="author" content="Tecnology Master">
+    <meta name="keywords" content="IT, software, IA, inteligencia artificial, desarrollo de software, ideas de negocio">
+    <meta name="robots" content="index, follow">
+
+    <!-- Metadatos para Compartir en redes sociales fb- ig - twitter - linkedin -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tecnologymaster.com">
+    <meta property="og:title" content="Tecnology Master - Innovación Tecnológica Empresarial">
+    <meta property="og:description" content="Transformamos ideas de negocio en realidad">
+    <meta property="og:image" content="https://www.tecnologymaster/images/og-image.jpg">
+
+    <link rel="alternate" hreflang="es" href="https://www.techvision-solutions.com">
+
+    <!-- Progressive App -->
+    <meta name="application-name" content="Tecnlogy Master">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- <meta name="apple-mobile-web-app-title" content="Tecnology Master" > -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- <meta http-equiv="refresh" content="0; url=http://example.com"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Tecnology Master</title>
 </head>
 
 <body>
-  <!-- BLOQUE/BLOCK -->
-  <header class="header">
-    <div class="header__wrapper">
-      <h2 class="header__logo">Logo</h2>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" aria-label="Inicio de la página" class="header__link">
+                <img src="./logo.webp" alt="Logo de Tecnlogy Master" class="header__logo">
+            </a>
+            <nav aria-label="Navegación principal" class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item "><a href="#about" aria-label="Conoce más sobre nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="header__item"><a href="#services" aria-label="Conoce nuestros servicios">Servicios</a>
+                    </li>
+                    <li class="header__item"><a href="#clients" aria-label="Nuestros clientes principales">Clientes</a>
+                    </li>
+                    <li class="header__item"><a href="#contact" aria-label="Nuestros clientes principales">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
 
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item header__item--active">Home</li>
-          <li class="header__item">Section</li>
-          <li class="header__item">Section</li>
-          <li class="header__item">Section</li>
-          <li class="header__item">Section</li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        </div>
+        <section class="header__information container">
 
-  <main>
-    <section class="banner" role="banner">
-      <article>
-        <h1 class="banner__title">Bienvenido a esta clase de CSS</h1>
-        <p class="banner__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quisquam, voluptas libero tempore obcaecati possimus architecto labore consequuntur praesentium ipsa iure tempora fugiat, ea sapiente? Autem ipsam quibusdam odio provident.</p>
-        <button class="banner__button">Comenzar</button>
-      </article>
+            <h1 class="header__title">Tecnology Master</h1>
+            <p class="header__description">Transformamos tus ideas de negocio en una realidad. Impulsando tu negocio a
+                través de soluciones tecnológicas
+            </p>
+            <a href="#contact" role="button" aria-label="Quiero impulsar mi negocio" class="header__action">Quiero
+                impulsar mi negocio</a>
+        </section>
 
-      <figure class="banner__figure">
-        <img class="banner__image" src="./banner-img.webp" alt="Carretera nevada con postes de energia y personas caminando">
-      </figure>
-    </section>
+    </header>
 
-    <section class="products">
-      <h2 class="products__title">Products</h2>
+    <main>
+        <!-- Sobre nosotros -->
+        <section id="about" class="about container">
+            <header>
+                <h2 class="about__title">¿Por que elegirnos?</h2>
+                <p class="about__description">En Tecnology Master fusionamos la Experiencia, Creatividad e innovación
+                    Tecnológica <br> para llevar tu
+                    negocio al siguiente nivel.</p>
+            </header>
+            <ul class="about_statistics">
+                <li class="about__item"><strong><sup>+</sup>80</strong>Clientes satisfechos</li>
+                <li class="about__item"><strong><sup>+</sup>6</strong>Años de experiencia</li>
+                <li class="about__item"><strong><sup>+</sup>220</strong>Proyectos exitosos</li>
+            </ul>
+        </section>
+        <!-- Servicios -->
+        <section id="services" aria-labelledby="services-title" class="services">
+            <div class="container">
+                <h2 id="services-title" class="services__title">Servicios Exclusivos</h2>
+                <!-- Servicio de marketing -->
+                <div class="services__container">
+                    <article aria-labelledby="services-marketing-title" class="service">
+                        <figure class="service__figure">
+                            <img src="https://revelus.netlify.app/assets/images/marketing.webp" role="presentation"
+                                class="service__image">
+                        </figure>
+                        <main class="service__information">
+                            <h3 id="services-marketing-title" class="service__title">Marketing</h3>
+                            <p class="service__description">Marketing Digital, ADS, Posicionamiento de Marca</p>
+                        </main>
+                    </article>
+                    <!-- Servicio de desarrollo web -->
+                    <article aria-labelledby="services-web-title" class="service">
+                        <figure class="service__figure">
+                            <img src="https://revelus.netlify.app/assets/images/marketing.webp" role="presentation"
+                                class="service__image">
+                        </figure>
+                        <main class="service__information">
+                            <h3 id="services-web-title" class="service__title">Desarrollo web</h3>
+                            <p class="service__description">Potenciamos tu presencia online</p>
+                        </main>
+                    </article>
+                    <!-- Servicio de aplicaciones móviles -->
+                    <article aria-labelledby="services-app-title" class="service">
+                        <figure class="service__figure">
+                            <img src="https://revelus.netlify.app/assets/images/marketing.webp" role="presentation"
+                                class="service__image">
+                        </figure>
+                        <main class="service__information">
+                            <h3 id="services-app-title" class="service__title">Aplicaciones móviles</h3>
+                            <p class="service__description">Aplicaciones móviles a medida</p>
+                        </main>
+                    </article>
+                    <!-- Servicio de Diseño-->
+                    <article aria-labelledby="services-design-title" class="service">
+                        <figure class="service__figure">
+                            <img src="https://revelus.netlify.app/assets/images/marketing.webp" role="presentation"
+                                class="service__image">
+                        </figure>
+                        <main class="service__information">
+                            <h3 id="services-design-title" class="service__title">Diseño UX/UI</h3>
+                            <p class="service__description">Experiencias digitales cautivadoras</p>
+                        </main>
+                    </article>
 
-      <div class="products__container">
-        <article class="product">
-          <header>
-            <figure class="product__figure">
-              <img class="product__image" src="./banner-img.webp" alt="Carretera nevada con postes de energia y personas caminando">
-            </figure>
-          </header>
-          <main>
-            <h3 class="product__title">CSS</h3>
-            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, deleniti odit natus incidunt maxime laborum praesentium laudantium eaque facilis, vitae voluptas expedita numquam, iste eius fugiat. Sequi fuga quisquam officiis.</p>
-          </main>
-          <footer>
-            <button class="product__button">Comprar</button>
-          </footer>
-        </article>
-
-        <article class="product">
-          <header>
-            <figure class="product__figure">
-              <img class="product__image" src="./banner-img.webp" alt="Carretera nevada con postes de energia y personas caminando">
-            </figure>
-          </header>
-          <main>
-            <h3 class="product__title">CSS</h3>
-            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, deleniti odit natus incidunt maxime laborum praesentium laudantium eaque facilis, vitae voluptas expedita numquam, iste eius fugiat. Sequi fuga quisquam officiis.</p>
-          </main>
-          <footer>
-            <button class="product__button">Comprar</button>
-          </footer>
-        </article>
-
-        <article class="product">
-          <header>
-            <figure class="product__figure">
-              <img class="product__image" src="./banner-img.webp" alt="Carretera nevada con postes de energia y personas caminando">
-            </figure>
-          </header>
-          <main>
-            <h3 class="product__title">CSS</h3>
-            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, deleniti odit natus incidunt maxime laborum praesentium laudantium eaque facilis, vitae voluptas expedita numquam, iste eius fugiat. Sequi fuga quisquam officiis.</p>
-          </main>
-          <footer>
-            <button class="product__button">Comprar</button>
-          </footer>
-        </article>
-
-        <article class="product">
-          <header>
-            <figure class="product__figure">
-              <img class="product__image" src="./banner-img.webp" alt="Carretera nevada con postes de energia y personas caminando">
-            </figure>
-          </header>
-          <main>
-            <h3 class="product__title">CSS</h3>
-            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, deleniti odit natus incidunt maxime laborum praesentium laudantium eaque facilis, vitae voluptas expedita numquam, iste eius fugiat. Sequi fuga quisquam officiis.</p>
-          </main>
-          <footer>
-            <button class="product__button">Comprar</button>
-          </footer>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-  </footer>
+                </div>
+            </div>
+        </section>
+        <!-- Clientes -->
+        <section id="clients" aria-labelledby="clients-title" class="clients container">
+            <header>
+                <h2 id="clients-title" class="clients__title">Nuestros Clientes principales</h2>
+                <p class="clients__descrption">Conoce a nuestros clientes más destacados y líderes en sus industrias</p>
+            </header>
+            <ul class="clients__list">
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 1" class="clients__image">
+                    </figure>
+                </li>
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 2" class="clients__image">
+                    </figure>
+                </li>
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 3" class="clients__image">
+                    </figure>
+                </li>
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 4" class="clients__image">
+                    </figure>
+                </li>
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 4" class="clients__image">
+                    </figure>
+                </li>
+                <li class="clients__items">
+                    <figure class="clients__figure">
+                        <img src="/ilustrator.webp" alt="Logo del cliente 4" class="clients__image">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <!-- Contacto -->
+        <section id="contact" class="contact">
+            <div class="contact__container">
+                <header>
+                    <h2 id="contacto-title" class="contact__title">Cuéntanos tu proyecto</h2>
+                    <p class="contact__description">Completa el formulario y un asesor se comunicará contigo para que
+                        recibas toda la información que
+                        necesitas.</p>
+                </header>
+                <form action="/send-form" method="POST" aria-label="Formulario de contacto" class="form">
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Información de contacto</legend>
+                        <label class="form__label">
+                            Nombre:
+                            <input class="form__input" type="text" name="name" placeholder="Escribe tu nombre completo"
+                                required aria-required="true">
+                        </label>
+                        <label class="form__label">
+                            Correo electrónico:
+                            <input type="email" name="email" placeholder="Escribe tu correo completo" required
+                                aria-required="true" class="form__input">
+                        </label>
+                    </fieldset>
+                    <fieldset class="form__fieldset">
+                        <legend class="form__legend">Mensaje</legend>
+                        <label class="form__label">
+                            Escribe tu mensaje
+                            <textarea name="message" rows="5" required aria-required="true"
+                                class="form__textarea"></textarea>
+                        </label>
+                    </fieldset>
+                    <button type="submit" class="form__submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <section aria-label="Información de contacto" class="footer__contact">
+                <h2 class="footer__contact-title">Contacto</h2>
+                <address class="footer__address">
+                    <p class="footer__email">Email: <a href="mailto:ejemplo@tecnologymaster.com">ejemplo@tecnologymaster.com</a></p>
+                    <p class="footer__phone">Teléfono: <a href="tel:+593123456789">+593123456789</a></p>
+                    <p class="footer__city">Loja, Ecuador</p>
+                </address>
+            </section>
+            <section aria-label="Síguenos en nuestras redes sociales" class="footer__socials">
+                <h2 class="footer__socials-title" >Redes sociales</h2>
+                <ul>
+                    <li class="footer__items"><a href="#" aria-label="Síguenos en Facebook">Facebook</a></li>
+                    <li class="footer__items"><a href="#" aria-label="Síguenos en Instagram">Instagram</a></li>
+                    <li class="footer__items"><a href="#" aria-label="Síguenos en LinkedIn">LinkedIn</a></li>
+                    <li class="footer__items"><a href="#" aria-label="Síguenos en Twuitter">Twitter</a></li>
+                </ul>
+            </section>
+            <section aria-label="Enlaces de políticas de privacidad y cookies" class="footer__links">
+                <ul>
+                    <li class="footer__items"><a href="#" aria-label="Lee nuestras políticas de privacidad">Política de privacidad</a></li>
+                    <li class="footer__items"><a href="#" aria-label="Lee nuestras política de cookies">Política de cookies</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer__copywriting">&copy; 2024 Tecnology Master. Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>
